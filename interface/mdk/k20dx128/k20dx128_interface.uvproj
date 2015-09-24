@@ -30,7 +30,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -98,7 +97,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -141,7 +139,7 @@
             <RestoreTracepoints>0</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>8</TargetSelection>
+          <TargetSelection>7</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -155,7 +153,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\ULP2CM3.DLL</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -171,10 +169,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -487,7 +481,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -575,60 +568,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -649,7 +596,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -820,7 +766,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -888,7 +833,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -931,7 +875,7 @@
             <RestoreTracepoints>0</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>8</TargetSelection>
+          <TargetSelection>9</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -961,10 +905,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -1277,7 +1217,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -1365,60 +1304,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1439,7 +1332,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -1610,7 +1502,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -1678,7 +1569,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -1721,7 +1611,7 @@
             <RestoreTracepoints>0</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>8</TargetSelection>
+          <TargetSelection>7</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -1735,7 +1625,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\ULP2CM3.DLL</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -1751,10 +1641,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -2067,7 +1953,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -2155,60 +2040,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -2229,7 +2068,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -2400,7 +2238,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -2468,7 +2305,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -2541,10 +2377,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -2857,7 +2689,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -2945,60 +2776,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -3019,7 +2804,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -3190,7 +2974,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -3258,7 +3041,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -3331,10 +3113,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -3647,7 +3425,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -3735,60 +3512,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -3809,7 +3540,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -3980,7 +3710,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -4048,7 +3777,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -4121,10 +3849,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -4437,7 +4161,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -4525,60 +4248,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -4599,7 +4276,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -4770,7 +4446,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -4838,7 +4513,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -4911,10 +4585,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -5227,7 +4897,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -5315,60 +4984,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -5389,7 +5012,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -5560,7 +5182,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -5628,7 +5249,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -5701,10 +5321,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -6017,7 +5633,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -6105,60 +5720,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -6179,7 +5748,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -6350,7 +5918,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -6418,7 +5985,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -6491,10 +6057,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -6807,7 +6369,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -6895,60 +6456,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -6969,7 +6484,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -7140,7 +6654,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -7208,7 +6721,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -7281,10 +6793,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -7597,7 +7105,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -7685,60 +7192,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -7759,7 +7220,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -7930,7 +7390,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -7998,7 +7457,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -8071,10 +7529,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -8387,7 +7841,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -8475,60 +7928,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -8549,7 +7956,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -8720,7 +8126,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -8788,7 +8193,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -8861,10 +8265,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -9177,7 +8577,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -9265,60 +8664,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -9339,7 +8692,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -9510,7 +8862,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -9578,7 +8929,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -9651,10 +9001,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -9967,7 +9313,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -10055,60 +9400,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -10129,7 +9428,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -10300,7 +9598,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -10368,7 +9665,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -10441,10 +9737,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -10757,7 +10049,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -10845,60 +10136,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -10919,7 +10164,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -11090,7 +10334,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -11158,7 +10401,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -11231,10 +10473,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -11547,7 +10785,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -11635,60 +10872,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -11709,7 +10900,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -11880,7 +11070,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -11948,7 +11137,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -11991,7 +11179,7 @@
             <RestoreTracepoints>0</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>8</TargetSelection>
+          <TargetSelection>7</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -12005,7 +11193,7 @@
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
             <InitializationFile></InitializationFile>
-            <Driver>BIN\ULP2CM3.DLL</Driver>
+            <Driver>Segger\JL2CM3.dll</Driver>
           </TargetDlls>
         </DebugOption>
         <Utilities>
@@ -12021,10 +11209,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -12337,7 +11521,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -12425,60 +11608,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -12499,7 +11636,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -12670,7 +11806,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -12738,7 +11873,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -12811,10 +11945,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -13127,7 +12257,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -13215,60 +12344,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -13289,7 +12372,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -13460,7 +12542,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -13528,7 +12609,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -13601,10 +12681,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -13771,8 +12847,8 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
-            <oTime>0</oTime>
+            <Optim>2</Optim>
+            <oTime>1</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>0</OneElfS>
             <Strict>0</Strict>
@@ -13917,7 +12993,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -14005,60 +13080,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -14079,7 +13108,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -14250,7 +13278,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -14318,7 +13345,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -14391,10 +13417,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -14707,7 +13729,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -14795,60 +13816,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -14869,7 +13844,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -15040,7 +14014,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -15108,7 +14081,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -15181,10 +14153,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -15497,7 +14465,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -15585,60 +14552,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -15659,7 +14580,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -15830,7 +14750,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -15898,7 +14817,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -15971,10 +14889,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -16287,7 +15201,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -16375,60 +15288,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -16449,7 +15316,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -16620,7 +15486,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -16688,7 +15553,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -16761,10 +15625,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -17077,7 +15937,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -17165,60 +16024,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -17239,7 +16052,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -17410,7 +16222,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -17478,7 +16289,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -17551,10 +16361,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -17867,7 +16673,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -17955,60 +16760,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -18029,7 +16788,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -18200,7 +16958,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -18268,7 +17025,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -18311,7 +17067,7 @@
             <RestoreTracepoints>0</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>8</TargetSelection>
+          <TargetSelection>9</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -18341,10 +17097,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -18657,7 +17409,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -18745,60 +17496,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -18819,7 +17524,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -18990,7 +17694,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -19058,7 +17761,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -19101,7 +17803,7 @@
             <RestoreTracepoints>0</RestoreTracepoints>
           </Target>
           <RunDebugAfterBuild>0</RunDebugAfterBuild>
-          <TargetSelection>6</TargetSelection>
+          <TargetSelection>7</TargetSelection>
           <SimDlls>
             <CpuDll></CpuDll>
             <CpuDllArguments></CpuDllArguments>
@@ -19131,10 +17833,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -19447,7 +18145,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -19535,60 +18232,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -19609,7 +18260,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -19780,7 +18430,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -19848,7 +18497,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -19921,10 +18569,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -20172,7 +18816,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Aads>
@@ -20273,7 +18916,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -20361,60 +19003,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -20435,7 +19031,6 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
@@ -20606,7 +19201,6 @@
           <SLE66AMisc></SLE66AMisc>
           <SLE66LinkerMisc></SLE66LinkerMisc>
           <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
-          <bCustSvd>0</bCustSvd>
           <UseEnv>0</UseEnv>
           <BinPath></BinPath>
           <IncludePath></IncludePath>
@@ -20674,7 +19268,6 @@
           <StopOnExitCode>3</StopOnExitCode>
           <CustomArgument></CustomArgument>
           <IncludeLibraryModules></IncludeLibraryModules>
-          <ComprImg>1</ComprImg>
         </CommonProperty>
         <DllOption>
           <SimDllName>SARMCM3.DLL</SimDllName>
@@ -20747,10 +19340,6 @@
           <Flash2>BIN\ULP2CM3.DLL</Flash2>
           <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
-          <pFcarmOut></pFcarmOut>
-          <pFcarmGrp></pFcarmGrp>
-          <pFcArmRoot></pFcArmRoot>
-          <FcArmLst>0</FcArmLst>
         </Utilities>
         <TargetArmAds>
           <ArmAdsMisc>
@@ -20998,7 +19587,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Aads>
@@ -21099,7 +19687,6 @@
                   <StopOnExitCode>11</StopOnExitCode>
                   <CustomArgument></CustomArgument>
                   <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
                 </CommonProperty>
                 <FileArmAds>
                   <Cads>
@@ -21187,60 +19774,14 @@
           <GroupName>HAL-Target</GroupName>
           <Files>
             <File>
-              <FileName>target_reset_Kseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Kseries.c</FilePath>
-            </File>
-            <File>
-              <FileName>target_reset_Lseries.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_Lseries.c</FilePath>
-              <FileOption>
-                <CommonProperty>
-                  <UseCPPCompiler>2</UseCPPCompiler>
-                  <RVCTCodeConst>0</RVCTCodeConst>
-                  <RVCTZI>0</RVCTZI>
-                  <RVCTOtherData>0</RVCTOtherData>
-                  <ModuleSelection>0</ModuleSelection>
-                  <IncludeInBuild>0</IncludeInBuild>
-                  <AlwaysBuild>2</AlwaysBuild>
-                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
-                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
-                  <PublicsOnly>2</PublicsOnly>
-                  <StopOnExitCode>11</StopOnExitCode>
-                  <CustomArgument></CustomArgument>
-                  <IncludeLibraryModules></IncludeLibraryModules>
-                  <ComprImg>1</ComprImg>
-                </CommonProperty>
-                <FileArmAds>
-                  <Cads>
-                    <interw>2</interw>
-                    <Optim>0</Optim>
-                    <oTime>2</oTime>
-                    <SplitLS>2</SplitLS>
-                    <OneElfS>2</OneElfS>
-                    <Strict>2</Strict>
-                    <EnumInt>2</EnumInt>
-                    <PlainCh>2</PlainCh>
-                    <Ropi>2</Ropi>
-                    <Rwpi>2</Rwpi>
-                    <wLevel>0</wLevel>
-                    <uThumb>2</uThumb>
-                    <uSurpInc>2</uSurpInc>
-                    <VariousControls>
-                      <MiscControls></MiscControls>
-                      <Define></Define>
-                      <Undefine></Undefine>
-                      <IncludePath></IncludePath>
-                    </VariousControls>
-                  </Cads>
-                </FileArmAds>
-              </FileOption>
-            </File>
-            <File>
               <FileName>target_flash_common.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -21261,7 +19802,1478 @@
               <StopOnExitCode>11</StopOnExitCode>
               <CustomArgument></CustomArgument>
               <IncludeLibraryModules></IncludeLibraryModules>
-              <ComprImg>0</ComprImg>
+            </CommonProperty>
+            <GroupArmAds>
+              <Cads>
+                <interw>2</interw>
+                <Optim>0</Optim>
+                <oTime>2</oTime>
+                <SplitLS>2</SplitLS>
+                <OneElfS>2</OneElfS>
+                <Strict>2</Strict>
+                <EnumInt>2</EnumInt>
+                <PlainCh>2</PlainCh>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <wLevel>0</wLevel>
+                <uThumb>2</uThumb>
+                <uSurpInc>2</uSurpInc>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath>..\USBStack\INC;..\Common\inc</IncludePath>
+                </VariousControls>
+              </Cads>
+              <Aads>
+                <interw>2</interw>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <thumb>2</thumb>
+                <SplitLS>2</SplitLS>
+                <SwStkChk>2</SwStkChk>
+                <NoWarn>2</NoWarn>
+                <uSurpInc>2</uSurpInc>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Aads>
+            </GroupArmAds>
+          </GroupOption>
+          <Files>
+            <File>
+              <FileName>usbd_cdc_acm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_cdc_acm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_core_cdc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_core_cdc.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_core_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_core_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_core_msc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_core_msc.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_msc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_msc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RTX</GroupName>
+          <Files>
+            <File>
+              <FileName>HAL_CM3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\HAL_CM3.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Event.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Event.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_List.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_List.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Mailbox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Mailbox.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_MemBox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_MemBox.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Mutex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Mutex.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Robin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Robin.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Semaphore.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Semaphore.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_System.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_System.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Task.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Time.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Timer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+      </Groups>
+    </Target>
+    <Target>
+      <TargetName>k20dx128_aducm360_if</TargetName>
+      <ToolsetNumber>0x4</ToolsetNumber>
+      <ToolsetName>ARM-ADS</ToolsetName>
+      <TargetOption>
+        <TargetCommonOption>
+          <Device>MK20DX128xxx5</Device>
+          <Vendor>Freescale Semiconductor</Vendor>
+          <Cpu>IRAM(0x1FFFE000-0x1FFFFFFF) IRAM2(0x20000000-0x20001FFF) IROM(0x0-0x1FFFF) IROM2(0x10000000-0x10007FFF) CLOCK(12000000) CPUTYPE("Cortex-M4") ELITTLE</Cpu>
+          <FlashUtilSpec></FlashUtilSpec>
+          <StartupFile>"STARTUP\Freescale\Kinetis\startup_MK20D5.s" ("Freescale MK20Xxxxxxx5 Startup Code")</StartupFile>
+          <FlashDriverDll>ULP2CM3(-O2510 -S0 -C0 -FO15 -FD20000000 -FC800 -FN2 -FF0MK_P128_50MHZ -FS00 -FL020000 -FF1MK_D32_50MHZ -FS110000000 -FL108000)</FlashDriverDll>
+          <DeviceId>6206</DeviceId>
+          <RegisterFile>MK20D5.H</RegisterFile>
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
+          <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
+          <UseEnv>0</UseEnv>
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
+          <RegisterFilePath>Freescale\Kinetis\</RegisterFilePath>
+          <DBRegisterFilePath>Freescale\Kinetis\</DBRegisterFilePath>
+          <TargetStatus>
+            <Error>0</Error>
+            <ExitCodeStop>0</ExitCodeStop>
+            <ButtonStop>0</ButtonStop>
+            <NotGenerated>0</NotGenerated>
+            <InvalidFlash>1</InvalidFlash>
+          </TargetStatus>
+          <OutputDirectory>.\Obj\k20dx128_k64f_if\</OutputDirectory>
+          <OutputName>k20dx128_k64f_if</OutputName>
+          <CreateExecutable>1</CreateExecutable>
+          <CreateLib>0</CreateLib>
+          <CreateHexFile>0</CreateHexFile>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>1</BrowseInformation>
+          <ListingPath>.\Lst\</ListingPath>
+          <HexFormatSelection>1</HexFormatSelection>
+          <Merge32K>0</Merge32K>
+          <CreateBatchFile>0</CreateBatchFile>
+          <BeforeCompile>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopU1X>0</nStopU1X>
+            <nStopU2X>0</nStopU2X>
+          </BeforeCompile>
+          <BeforeMake>
+            <RunUserProg1>1</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name>python ..\..\..\tools\pre_build_script.py</UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </BeforeMake>
+          <AfterMake>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </AfterMake>
+          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SVCSIdString></SVCSIdString>
+        </TargetCommonOption>
+        <CommonProperty>
+          <UseCPPCompiler>0</UseCPPCompiler>
+          <RVCTCodeConst>0</RVCTCodeConst>
+          <RVCTZI>0</RVCTZI>
+          <RVCTOtherData>0</RVCTOtherData>
+          <ModuleSelection>0</ModuleSelection>
+          <IncludeInBuild>1</IncludeInBuild>
+          <AlwaysBuild>0</AlwaysBuild>
+          <GenerateAssemblyFile>0</GenerateAssemblyFile>
+          <AssembleAssemblyFile>0</AssembleAssemblyFile>
+          <PublicsOnly>0</PublicsOnly>
+          <StopOnExitCode>3</StopOnExitCode>
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
+        </CommonProperty>
+        <DllOption>
+          <SimDllName>SARMCM3.DLL</SimDllName>
+          <SimDllArguments></SimDllArguments>
+          <SimDlgDll>DCM.DLL</SimDlgDll>
+          <SimDlgDllArguments>-pCM4</SimDlgDllArguments>
+          <TargetDllName>SARMCM3.DLL</TargetDllName>
+          <TargetDllArguments>-MPU</TargetDllArguments>
+          <TargetDlgDll>TCM.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pCM4</TargetDlgDllArguments>
+        </DllOption>
+        <DebugOption>
+          <OPTHX>
+            <HexSelection>1</HexSelection>
+            <HexRangeLowAddress>0</HexRangeLowAddress>
+            <HexRangeHighAddress>0</HexRangeHighAddress>
+            <HexOffset>0</HexOffset>
+            <Oh166RecLen>16</Oh166RecLen>
+          </OPTHX>
+          <Simulator>
+            <UseSimulator>0</UseSimulator>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>1</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+          </Simulator>
+          <Target>
+            <UseTarget>1</UseTarget>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>0</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <RestoreTracepoints>0</RestoreTracepoints>
+          </Target>
+          <RunDebugAfterBuild>0</RunDebugAfterBuild>
+          <TargetSelection>7</TargetSelection>
+          <SimDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+          </SimDlls>
+          <TargetDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+            <Driver>Segger\JL2CM3.dll</Driver>
+          </TargetDlls>
+        </DebugOption>
+        <Utilities>
+          <Flash1>
+            <UseTargetDll>1</UseTargetDll>
+            <UseExternalTool>0</UseExternalTool>
+            <RunIndependent>0</RunIndependent>
+            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <Capability>1</Capability>
+            <DriverSelection>4100</DriverSelection>
+          </Flash1>
+          <bUseTDR>1</bUseTDR>
+          <Flash2>BIN\ULP2CM3.DLL</Flash2>
+          <Flash3>"" ()</Flash3>
+          <Flash4></Flash4>
+        </Utilities>
+        <TargetArmAds>
+          <ArmAdsMisc>
+            <GenerateListings>0</GenerateListings>
+            <asHll>1</asHll>
+            <asAsm>1</asAsm>
+            <asMacX>1</asMacX>
+            <asSyms>1</asSyms>
+            <asFals>1</asFals>
+            <asDbgD>1</asDbgD>
+            <asForm>1</asForm>
+            <ldLst>0</ldLst>
+            <ldmm>1</ldmm>
+            <ldXref>1</ldXref>
+            <BigEnd>0</BigEnd>
+            <AdsALst>1</AdsALst>
+            <AdsACrf>1</AdsACrf>
+            <AdsANop>0</AdsANop>
+            <AdsANot>0</AdsANot>
+            <AdsLLst>1</AdsLLst>
+            <AdsLmap>1</AdsLmap>
+            <AdsLcgr>1</AdsLcgr>
+            <AdsLsym>1</AdsLsym>
+            <AdsLszi>1</AdsLszi>
+            <AdsLtoi>1</AdsLtoi>
+            <AdsLsun>1</AdsLsun>
+            <AdsLven>1</AdsLven>
+            <AdsLsxf>1</AdsLsxf>
+            <RvctClst>0</RvctClst>
+            <GenPPlst>0</GenPPlst>
+            <AdsCpuType>"Cortex-M4"</AdsCpuType>
+            <RvctDeviceName></RvctDeviceName>
+            <mOS>0</mOS>
+            <uocRom>0</uocRom>
+            <uocRam>0</uocRam>
+            <hadIROM>1</hadIROM>
+            <hadIRAM>1</hadIRAM>
+            <hadXRAM>0</hadXRAM>
+            <uocXRam>0</uocXRam>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>1</hadIRAM2>
+            <hadIROM2>1</hadIROM2>
+            <StupSel>8</StupSel>
+            <useUlib>1</useUlib>
+            <EndSel>0</EndSel>
+            <uLtcg>0</uLtcg>
+            <RoSelD>3</RoSelD>
+            <RwSelD>3</RwSelD>
+            <CodeSel>1</CodeSel>
+            <OptFeed>0</OptFeed>
+            <NoZi1>0</NoZi1>
+            <NoZi2>0</NoZi2>
+            <NoZi3>0</NoZi3>
+            <NoZi4>0</NoZi4>
+            <NoZi5>0</NoZi5>
+            <Ro1Chk>0</Ro1Chk>
+            <Ro2Chk>0</Ro2Chk>
+            <Ro3Chk>0</Ro3Chk>
+            <Ir1Chk>1</Ir1Chk>
+            <Ir2Chk>0</Ir2Chk>
+            <Ra1Chk>0</Ra1Chk>
+            <Ra2Chk>0</Ra2Chk>
+            <Ra3Chk>0</Ra3Chk>
+            <Im1Chk>1</Im1Chk>
+            <Im2Chk>1</Im2Chk>
+            <OnChipMemories>
+              <Ocm1>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm1>
+              <Ocm2>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm2>
+              <Ocm3>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm3>
+              <Ocm4>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm4>
+              <Ocm5>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm5>
+              <Ocm6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm6>
+              <IRAM>
+                <Type>0</Type>
+                <StartAddress>0x1fffe000</StartAddress>
+                <Size>0x2000</Size>
+              </IRAM>
+              <IROM>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x20000</Size>
+              </IROM>
+              <XRAM>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </XRAM>
+              <OCR_RVCT1>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT1>
+              <OCR_RVCT2>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT2>
+              <OCR_RVCT3>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT3>
+              <OCR_RVCT4>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x20000</Size>
+              </OCR_RVCT4>
+              <OCR_RVCT5>
+                <Type>1</Type>
+                <StartAddress>0x10000000</StartAddress>
+                <Size>0x8000</Size>
+              </OCR_RVCT5>
+              <OCR_RVCT6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT6>
+              <OCR_RVCT7>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT7>
+              <OCR_RVCT8>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT8>
+              <OCR_RVCT9>
+                <Type>0</Type>
+                <StartAddress>0x1fffe000</StartAddress>
+                <Size>0x2000</Size>
+              </OCR_RVCT9>
+              <OCR_RVCT10>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x2000</Size>
+              </OCR_RVCT10>
+            </OnChipMemories>
+            <RvctStartVector></RvctStartVector>
+          </ArmAdsMisc>
+          <Cads>
+            <interw>1</interw>
+            <Optim>2</Optim>
+            <oTime>1</oTime>
+            <SplitLS>0</SplitLS>
+            <OneElfS>0</OneElfS>
+            <Strict>0</Strict>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <wLevel>0</wLevel>
+            <uThumb>0</uThumb>
+            <uSurpInc>0</uSurpInc>
+            <VariousControls>
+              <MiscControls></MiscControls>
+              <Define>TARGET_MK20D5, __RTX, DBG_ADUCM360, BOARD_FRDM_K64F, INTERFACE_POWER_EN</Define>
+              <Undefine></Undefine>
+              <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_ADUCM360;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
+            </VariousControls>
+          </Cads>
+          <Aads>
+            <interw>1</interw>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <thumb>0</thumb>
+            <SplitLS>0</SplitLS>
+            <SwStkChk>0</SwStkChk>
+            <NoWarn>0</NoWarn>
+            <uSurpInc>0</uSurpInc>
+            <VariousControls>
+              <MiscControls></MiscControls>
+              <Define></Define>
+              <Undefine></Undefine>
+              <IncludePath></IncludePath>
+            </VariousControls>
+          </Aads>
+          <LDads>
+            <umfTarg>0</umfTarg>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <noStLib>0</noStLib>
+            <RepFail>0</RepFail>
+            <useFile>0</useFile>
+            <TextAddressRange>0x00000000</TextAddressRange>
+            <DataAddressRange>0x1FFFE000</DataAddressRange>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5.sct</ScatterFile>
+            <IncludeLibs></IncludeLibs>
+            <IncludeLibsPath></IncludeLibsPath>
+            <Misc></Misc>
+            <LinkerInputFile></LinkerInputFile>
+            <DisabledWarnings></DisabledWarnings>
+          </LDads>
+        </TargetArmAds>
+      </TargetOption>
+      <Groups>
+        <Group>
+          <GroupName>CMSIS</GroupName>
+          <Files>
+            <File>
+              <FileName>system_MK20D5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\system_MK20D5.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_MK20D5.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\startup_MK20D5.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Common</GroupName>
+          <Files>
+            <File>
+              <FileName>DAP.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\DAP.c</FilePath>
+            </File>
+            <File>
+              <FileName>dap_vendor_command.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\dap_vendor_command.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>RTX_Config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\RTX_Config.c</FilePath>
+            </File>
+            <File>
+              <FileName>semihost.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\semihost.c</FilePath>
+            </File>
+            <File>
+              <FileName>SVC_Table.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\Common\src\SVC_Table.s</FilePath>
+            </File>
+            <File>
+              <FileName>SW_DP.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\SW_DP.c</FilePath>
+            </File>
+            <File>
+              <FileName>swd_host.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\swd_host.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\usb_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_user_cdc_acm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\usbd_user_cdc_acm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_user_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\usbd_user_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_user_msc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\usbd_user_msc.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>2</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <VariousControls>
+                      <MiscControls>--c99</MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>version.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\version.c</FilePath>
+            </File>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbed_htm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Common\inc\mbed_htm.h</FilePath>
+            </File>
+            <File>
+              <FileName>serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\serial.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HAL-Interface</GroupName>
+          <Files>
+            <File>
+              <FileName>DAP_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\DAP_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>read_uid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\read_uid.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_MK20D5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\usbd_MK20D5.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_buf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\usb_buf.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HAL-Target</GroupName>
+          <Files>
+            <File>
+              <FileName>target_flash_common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>USBStack</GroupName>
+          <GroupOption>
+            <CommonProperty>
+              <UseCPPCompiler>0</UseCPPCompiler>
+              <RVCTCodeConst>0</RVCTCodeConst>
+              <RVCTZI>0</RVCTZI>
+              <RVCTOtherData>0</RVCTOtherData>
+              <ModuleSelection>0</ModuleSelection>
+              <IncludeInBuild>2</IncludeInBuild>
+              <AlwaysBuild>2</AlwaysBuild>
+              <GenerateAssemblyFile>2</GenerateAssemblyFile>
+              <AssembleAssemblyFile>2</AssembleAssemblyFile>
+              <PublicsOnly>2</PublicsOnly>
+              <StopOnExitCode>11</StopOnExitCode>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
+            </CommonProperty>
+            <GroupArmAds>
+              <Cads>
+                <interw>2</interw>
+                <Optim>0</Optim>
+                <oTime>2</oTime>
+                <SplitLS>2</SplitLS>
+                <OneElfS>2</OneElfS>
+                <Strict>2</Strict>
+                <EnumInt>2</EnumInt>
+                <PlainCh>2</PlainCh>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <wLevel>0</wLevel>
+                <uThumb>2</uThumb>
+                <uSurpInc>2</uSurpInc>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath>..\USBStack\INC;..\Common\inc</IncludePath>
+                </VariousControls>
+              </Cads>
+              <Aads>
+                <interw>2</interw>
+                <Ropi>2</Ropi>
+                <Rwpi>2</Rwpi>
+                <thumb>2</thumb>
+                <SplitLS>2</SplitLS>
+                <SwStkChk>2</SwStkChk>
+                <NoWarn>2</NoWarn>
+                <uSurpInc>2</uSurpInc>
+                <VariousControls>
+                  <MiscControls></MiscControls>
+                  <Define></Define>
+                  <Undefine></Undefine>
+                  <IncludePath></IncludePath>
+                </VariousControls>
+              </Aads>
+            </GroupArmAds>
+          </GroupOption>
+          <Files>
+            <File>
+              <FileName>usbd_cdc_acm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_cdc_acm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_core.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_core.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_core_cdc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_core_cdc.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_core_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_core_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_core_msc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_core_msc.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_msc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\USBStack\SRC\usbd_msc.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>RTX</GroupName>
+          <Files>
+            <File>
+              <FileName>HAL_CM3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\HAL_CM3.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Event.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Event.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_List.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_List.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Mailbox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Mailbox.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_MemBox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_MemBox.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Mutex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Mutex.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Robin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Robin.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Semaphore.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Semaphore.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_System.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_System.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Task.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Time.c</FilePath>
+            </File>
+            <File>
+              <FileName>rt_Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\rtos\rt_Timer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+      </Groups>
+    </Target>
+    <Target>
+      <TargetName>K20dx128_aducm360_mbed_bootloader_if</TargetName>
+      <ToolsetNumber>0x4</ToolsetNumber>
+      <ToolsetName>ARM-ADS</ToolsetName>
+      <TargetOption>
+        <TargetCommonOption>
+          <Device>MK20DX128xxx5</Device>
+          <Vendor>Freescale Semiconductor</Vendor>
+          <Cpu>IRAM(0x1FFFE000-0x1FFFFFFF) IRAM2(0x20000000-0x20001FFF) IROM(0x0-0x1FFFF) IROM2(0x10000000-0x10007FFF) CLOCK(12000000) CPUTYPE("Cortex-M4") ELITTLE</Cpu>
+          <FlashUtilSpec></FlashUtilSpec>
+          <StartupFile>"STARTUP\Freescale\Kinetis\startup_MK20D5.s" ("Freescale MK20Xxxxxxx5 Startup Code")</StartupFile>
+          <FlashDriverDll>ULP2CM3(-O2510 -S0 -C0 -FO15 -FD20000000 -FC800 -FN2 -FF0MK_P128_50MHZ -FS00 -FL020000 -FF1MK_D32_50MHZ -FS110000000 -FL108000)</FlashDriverDll>
+          <DeviceId>6206</DeviceId>
+          <RegisterFile>MK20D5.H</RegisterFile>
+          <MemoryEnv></MemoryEnv>
+          <Cmp></Cmp>
+          <Asm></Asm>
+          <Linker></Linker>
+          <OHString></OHString>
+          <InfinionOptionDll></InfinionOptionDll>
+          <SLE66CMisc></SLE66CMisc>
+          <SLE66AMisc></SLE66AMisc>
+          <SLE66LinkerMisc></SLE66LinkerMisc>
+          <SFDFile>SFD\Freescale\Kinetis\MK20D5.sfr</SFDFile>
+          <UseEnv>0</UseEnv>
+          <BinPath></BinPath>
+          <IncludePath></IncludePath>
+          <LibPath></LibPath>
+          <RegisterFilePath>Freescale\Kinetis\</RegisterFilePath>
+          <DBRegisterFilePath>Freescale\Kinetis\</DBRegisterFilePath>
+          <TargetStatus>
+            <Error>0</Error>
+            <ExitCodeStop>0</ExitCodeStop>
+            <ButtonStop>0</ButtonStop>
+            <NotGenerated>0</NotGenerated>
+            <InvalidFlash>1</InvalidFlash>
+          </TargetStatus>
+          <OutputDirectory>.\Obj\k20dx128_k64f_if_mbed_bootloader\</OutputDirectory>
+          <OutputName>k20dx128_k64f_mbed</OutputName>
+          <CreateExecutable>1</CreateExecutable>
+          <CreateLib>0</CreateLib>
+          <CreateHexFile>0</CreateHexFile>
+          <DebugInformation>1</DebugInformation>
+          <BrowseInformation>1</BrowseInformation>
+          <ListingPath>.\Lst\</ListingPath>
+          <HexFormatSelection>1</HexFormatSelection>
+          <Merge32K>0</Merge32K>
+          <CreateBatchFile>0</CreateBatchFile>
+          <BeforeCompile>
+            <RunUserProg1>0</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name></UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+            <nStopU1X>0</nStopU1X>
+            <nStopU2X>0</nStopU2X>
+          </BeforeCompile>
+          <BeforeMake>
+            <RunUserProg1>1</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name>python ..\..\..\tools\pre_build_script.py</UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </BeforeMake>
+          <AfterMake>
+            <RunUserProg1>1</RunUserProg1>
+            <RunUserProg2>0</RunUserProg2>
+            <UserProg1Name>fromelf --bin -o "$L@L.bin" "#L"</UserProg1Name>
+            <UserProg2Name></UserProg2Name>
+            <UserProg1Dos16Mode>0</UserProg1Dos16Mode>
+            <UserProg2Dos16Mode>0</UserProg2Dos16Mode>
+          </AfterMake>
+          <SelectedForBatchBuild>0</SelectedForBatchBuild>
+          <SVCSIdString></SVCSIdString>
+        </TargetCommonOption>
+        <CommonProperty>
+          <UseCPPCompiler>0</UseCPPCompiler>
+          <RVCTCodeConst>0</RVCTCodeConst>
+          <RVCTZI>0</RVCTZI>
+          <RVCTOtherData>0</RVCTOtherData>
+          <ModuleSelection>0</ModuleSelection>
+          <IncludeInBuild>1</IncludeInBuild>
+          <AlwaysBuild>0</AlwaysBuild>
+          <GenerateAssemblyFile>0</GenerateAssemblyFile>
+          <AssembleAssemblyFile>0</AssembleAssemblyFile>
+          <PublicsOnly>0</PublicsOnly>
+          <StopOnExitCode>3</StopOnExitCode>
+          <CustomArgument></CustomArgument>
+          <IncludeLibraryModules></IncludeLibraryModules>
+        </CommonProperty>
+        <DllOption>
+          <SimDllName>SARMCM3.DLL</SimDllName>
+          <SimDllArguments></SimDllArguments>
+          <SimDlgDll>DCM.DLL</SimDlgDll>
+          <SimDlgDllArguments>-pCM4</SimDlgDllArguments>
+          <TargetDllName>SARMCM3.DLL</TargetDllName>
+          <TargetDllArguments>-MPU</TargetDllArguments>
+          <TargetDlgDll>TCM.DLL</TargetDlgDll>
+          <TargetDlgDllArguments>-pCM4</TargetDlgDllArguments>
+        </DllOption>
+        <DebugOption>
+          <OPTHX>
+            <HexSelection>1</HexSelection>
+            <HexRangeLowAddress>0</HexRangeLowAddress>
+            <HexRangeHighAddress>0</HexRangeHighAddress>
+            <HexOffset>0</HexOffset>
+            <Oh166RecLen>16</Oh166RecLen>
+          </OPTHX>
+          <Simulator>
+            <UseSimulator>0</UseSimulator>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>1</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <LimitSpeedToRealTime>0</LimitSpeedToRealTime>
+          </Simulator>
+          <Target>
+            <UseTarget>1</UseTarget>
+            <LoadApplicationAtStartup>1</LoadApplicationAtStartup>
+            <RunToMain>1</RunToMain>
+            <RestoreBreakpoints>1</RestoreBreakpoints>
+            <RestoreWatchpoints>1</RestoreWatchpoints>
+            <RestoreMemoryDisplay>1</RestoreMemoryDisplay>
+            <RestoreFunctions>0</RestoreFunctions>
+            <RestoreToolbox>1</RestoreToolbox>
+            <RestoreTracepoints>0</RestoreTracepoints>
+          </Target>
+          <RunDebugAfterBuild>0</RunDebugAfterBuild>
+          <TargetSelection>7</TargetSelection>
+          <SimDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+          </SimDlls>
+          <TargetDlls>
+            <CpuDll></CpuDll>
+            <CpuDllArguments></CpuDllArguments>
+            <PeripheralDll></PeripheralDll>
+            <PeripheralDllArguments></PeripheralDllArguments>
+            <InitializationFile></InitializationFile>
+            <Driver>Segger\JL2CM3.dll</Driver>
+          </TargetDlls>
+        </DebugOption>
+        <Utilities>
+          <Flash1>
+            <UseTargetDll>1</UseTargetDll>
+            <UseExternalTool>0</UseExternalTool>
+            <RunIndependent>0</RunIndependent>
+            <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
+            <Capability>1</Capability>
+            <DriverSelection>4100</DriverSelection>
+          </Flash1>
+          <bUseTDR>1</bUseTDR>
+          <Flash2>BIN\ULP2CM3.DLL</Flash2>
+          <Flash3>"" ()</Flash3>
+          <Flash4></Flash4>
+        </Utilities>
+        <TargetArmAds>
+          <ArmAdsMisc>
+            <GenerateListings>0</GenerateListings>
+            <asHll>1</asHll>
+            <asAsm>1</asAsm>
+            <asMacX>1</asMacX>
+            <asSyms>1</asSyms>
+            <asFals>1</asFals>
+            <asDbgD>1</asDbgD>
+            <asForm>1</asForm>
+            <ldLst>0</ldLst>
+            <ldmm>1</ldmm>
+            <ldXref>1</ldXref>
+            <BigEnd>0</BigEnd>
+            <AdsALst>1</AdsALst>
+            <AdsACrf>1</AdsACrf>
+            <AdsANop>0</AdsANop>
+            <AdsANot>0</AdsANot>
+            <AdsLLst>1</AdsLLst>
+            <AdsLmap>1</AdsLmap>
+            <AdsLcgr>1</AdsLcgr>
+            <AdsLsym>1</AdsLsym>
+            <AdsLszi>1</AdsLszi>
+            <AdsLtoi>1</AdsLtoi>
+            <AdsLsun>1</AdsLsun>
+            <AdsLven>1</AdsLven>
+            <AdsLsxf>1</AdsLsxf>
+            <RvctClst>0</RvctClst>
+            <GenPPlst>0</GenPPlst>
+            <AdsCpuType>"Cortex-M4"</AdsCpuType>
+            <RvctDeviceName></RvctDeviceName>
+            <mOS>0</mOS>
+            <uocRom>0</uocRom>
+            <uocRam>0</uocRam>
+            <hadIROM>1</hadIROM>
+            <hadIRAM>1</hadIRAM>
+            <hadXRAM>0</hadXRAM>
+            <uocXRam>0</uocXRam>
+            <RvdsVP>0</RvdsVP>
+            <hadIRAM2>1</hadIRAM2>
+            <hadIROM2>1</hadIROM2>
+            <StupSel>8</StupSel>
+            <useUlib>1</useUlib>
+            <EndSel>0</EndSel>
+            <uLtcg>0</uLtcg>
+            <RoSelD>3</RoSelD>
+            <RwSelD>3</RwSelD>
+            <CodeSel>1</CodeSel>
+            <OptFeed>0</OptFeed>
+            <NoZi1>0</NoZi1>
+            <NoZi2>0</NoZi2>
+            <NoZi3>0</NoZi3>
+            <NoZi4>0</NoZi4>
+            <NoZi5>0</NoZi5>
+            <Ro1Chk>0</Ro1Chk>
+            <Ro2Chk>0</Ro2Chk>
+            <Ro3Chk>0</Ro3Chk>
+            <Ir1Chk>1</Ir1Chk>
+            <Ir2Chk>0</Ir2Chk>
+            <Ra1Chk>0</Ra1Chk>
+            <Ra2Chk>0</Ra2Chk>
+            <Ra3Chk>0</Ra3Chk>
+            <Im1Chk>1</Im1Chk>
+            <Im2Chk>1</Im2Chk>
+            <OnChipMemories>
+              <Ocm1>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm1>
+              <Ocm2>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm2>
+              <Ocm3>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm3>
+              <Ocm4>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm4>
+              <Ocm5>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm5>
+              <Ocm6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </Ocm6>
+              <IRAM>
+                <Type>0</Type>
+                <StartAddress>0x1fffe000</StartAddress>
+                <Size>0x2000</Size>
+              </IRAM>
+              <IROM>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x20000</Size>
+              </IROM>
+              <XRAM>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </XRAM>
+              <OCR_RVCT1>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT1>
+              <OCR_RVCT2>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT2>
+              <OCR_RVCT3>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT3>
+              <OCR_RVCT4>
+                <Type>1</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x20000</Size>
+              </OCR_RVCT4>
+              <OCR_RVCT5>
+                <Type>1</Type>
+                <StartAddress>0x10000000</StartAddress>
+                <Size>0x8000</Size>
+              </OCR_RVCT5>
+              <OCR_RVCT6>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT6>
+              <OCR_RVCT7>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT7>
+              <OCR_RVCT8>
+                <Type>0</Type>
+                <StartAddress>0x0</StartAddress>
+                <Size>0x0</Size>
+              </OCR_RVCT8>
+              <OCR_RVCT9>
+                <Type>0</Type>
+                <StartAddress>0x1fffe000</StartAddress>
+                <Size>0x2000</Size>
+              </OCR_RVCT9>
+              <OCR_RVCT10>
+                <Type>0</Type>
+                <StartAddress>0x20000000</StartAddress>
+                <Size>0x2000</Size>
+              </OCR_RVCT10>
+            </OnChipMemories>
+            <RvctStartVector></RvctStartVector>
+          </ArmAdsMisc>
+          <Cads>
+            <interw>1</interw>
+            <Optim>2</Optim>
+            <oTime>1</oTime>
+            <SplitLS>0</SplitLS>
+            <OneElfS>0</OneElfS>
+            <Strict>0</Strict>
+            <EnumInt>0</EnumInt>
+            <PlainCh>0</PlainCh>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <wLevel>0</wLevel>
+            <uThumb>0</uThumb>
+            <uSurpInc>0</uSurpInc>
+            <VariousControls>
+              <MiscControls></MiscControls>
+              <Define>OFFSET_VTABLE_20K, TARGET_MK20D5, __RTX, DBG_ADUCM360, BOARD_FRDM_K64F, INTERFACE_POWER_EN</Define>
+              <Undefine></Undefine>
+              <IncludePath>..\..\..\shared\USBStack\INC;..\..\Common\src;..\..\Common\inc;..\..\target\hal\DBG_Freescale\DBG_ADUCM360;..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\cmsis;..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX;..\..\..\shared\rtos;..\..\target\hal\DBG_Freescale\common</IncludePath>
+            </VariousControls>
+          </Cads>
+          <Aads>
+            <interw>1</interw>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <thumb>0</thumb>
+            <SplitLS>0</SplitLS>
+            <SwStkChk>0</SwStkChk>
+            <NoWarn>0</NoWarn>
+            <uSurpInc>0</uSurpInc>
+            <VariousControls>
+              <MiscControls></MiscControls>
+              <Define>MBED_BOOTLOADER</Define>
+              <Undefine></Undefine>
+              <IncludePath></IncludePath>
+            </VariousControls>
+          </Aads>
+          <LDads>
+            <umfTarg>0</umfTarg>
+            <Ropi>0</Ropi>
+            <Rwpi>0</Rwpi>
+            <noStLib>0</noStLib>
+            <RepFail>0</RepFail>
+            <useFile>0</useFile>
+            <TextAddressRange>0x00000000</TextAddressRange>
+            <DataAddressRange>0x1FFFE000</DataAddressRange>
+            <ScatterFile>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\MK20D5_mbed_bootloader.sct</ScatterFile>
+            <IncludeLibs></IncludeLibs>
+            <IncludeLibsPath></IncludeLibsPath>
+            <Misc></Misc>
+            <LinkerInputFile></LinkerInputFile>
+            <DisabledWarnings></DisabledWarnings>
+          </LDads>
+        </TargetArmAds>
+      </TargetOption>
+      <Groups>
+        <Group>
+          <GroupName>CMSIS</GroupName>
+          <Files>
+            <File>
+              <FileName>system_MK20D5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\system_MK20D5.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_MK20D5.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\..\shared\cmsis\TARGET_Freescale\TARGET_MK20DX\TOOLCHAIN_ARM_STD\startup_MK20D5.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Common</GroupName>
+          <Files>
+            <File>
+              <FileName>DAP.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\DAP.c</FilePath>
+            </File>
+            <File>
+              <FileName>dap_vendor_command.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\dap_vendor_command.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>RTX_Config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\RTX_Config.c</FilePath>
+            </File>
+            <File>
+              <FileName>semihost.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\semihost.c</FilePath>
+            </File>
+            <File>
+              <FileName>SVC_Table.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\Common\src\SVC_Table.s</FilePath>
+            </File>
+            <File>
+              <FileName>SW_DP.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\SW_DP.c</FilePath>
+            </File>
+            <File>
+              <FileName>swd_host.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\swd_host.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_config.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\usb_config.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_user_cdc_acm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\usbd_user_cdc_acm.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_user_hid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\usbd_user_hid.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_user_msc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\usbd_user_msc.c</FilePath>
+              <FileOption>
+                <CommonProperty>
+                  <UseCPPCompiler>2</UseCPPCompiler>
+                  <RVCTCodeConst>0</RVCTCodeConst>
+                  <RVCTZI>0</RVCTZI>
+                  <RVCTOtherData>0</RVCTOtherData>
+                  <ModuleSelection>0</ModuleSelection>
+                  <IncludeInBuild>2</IncludeInBuild>
+                  <AlwaysBuild>2</AlwaysBuild>
+                  <GenerateAssemblyFile>2</GenerateAssemblyFile>
+                  <AssembleAssemblyFile>2</AssembleAssemblyFile>
+                  <PublicsOnly>2</PublicsOnly>
+                  <StopOnExitCode>11</StopOnExitCode>
+                  <CustomArgument></CustomArgument>
+                  <IncludeLibraryModules></IncludeLibraryModules>
+                </CommonProperty>
+                <FileArmAds>
+                  <Cads>
+                    <interw>2</interw>
+                    <Optim>0</Optim>
+                    <oTime>2</oTime>
+                    <SplitLS>2</SplitLS>
+                    <OneElfS>2</OneElfS>
+                    <Strict>2</Strict>
+                    <EnumInt>2</EnumInt>
+                    <PlainCh>2</PlainCh>
+                    <Ropi>2</Ropi>
+                    <Rwpi>2</Rwpi>
+                    <wLevel>0</wLevel>
+                    <uThumb>2</uThumb>
+                    <uSurpInc>2</uSurpInc>
+                    <VariousControls>
+                      <MiscControls>--c99</MiscControls>
+                      <Define></Define>
+                      <Undefine></Undefine>
+                      <IncludePath></IncludePath>
+                    </VariousControls>
+                  </Cads>
+                </FileArmAds>
+              </FileOption>
+            </File>
+            <File>
+              <FileName>version.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\version.c</FilePath>
+            </File>
+            <File>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbed_htm.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Common\inc\mbed_htm.h</FilePath>
+            </File>
+            <File>
+              <FileName>serial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Common\src\serial.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HAL-Interface</GroupName>
+          <Files>
+            <File>
+              <FileName>DAP_config.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\DAP_config.h</FilePath>
+            </File>
+            <File>
+              <FileName>gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>read_uid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\read_uid.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>usbd_MK20D5.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\usbd_MK20D5.c</FilePath>
+            </File>
+            <File>
+              <FileName>usb_buf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\interface\hal\TARGET_Freescale\TARGET_MK20DX\usb_buf.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HAL-Target</GroupName>
+          <Files>
+            <File>
+              <FileName>target_flash_common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_flash_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>target_reset_aducm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\target\hal\DBG_Freescale\common\target_reset_aducm.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>USBStack</GroupName>
+          <GroupOption>
+            <CommonProperty>
+              <UseCPPCompiler>0</UseCPPCompiler>
+              <RVCTCodeConst>0</RVCTCodeConst>
+              <RVCTZI>0</RVCTZI>
+              <RVCTOtherData>0</RVCTOtherData>
+              <ModuleSelection>0</ModuleSelection>
+              <IncludeInBuild>2</IncludeInBuild>
+              <AlwaysBuild>2</AlwaysBuild>
+              <GenerateAssemblyFile>2</GenerateAssemblyFile>
+              <AssembleAssemblyFile>2</AssembleAssemblyFile>
+              <PublicsOnly>2</PublicsOnly>
+              <StopOnExitCode>11</StopOnExitCode>
+              <CustomArgument></CustomArgument>
+              <IncludeLibraryModules></IncludeLibraryModules>
             </CommonProperty>
             <GroupArmAds>
               <Cads>
