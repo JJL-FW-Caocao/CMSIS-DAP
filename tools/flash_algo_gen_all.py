@@ -48,6 +48,7 @@ ALGO_START_ADDRESSES = {
     'LPC18xx':  0x10000000,
     'LPC43xx':  0x10000000,
     'MKXX':     0x20000000,
+    'ADuCM360 128kB Flash':     0x20000000,
 }
 
 class FlashInfo(object):
