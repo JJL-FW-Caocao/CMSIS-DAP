@@ -16,7 +16,7 @@
 #ifndef MBED_HTM_H
 #define MBED_HTM
 
-#include "version_git.h"
+//#include "version_git.h"
 
 #if GIT_LOCAL_MODS == 1
     #warning "Building with local modifications."
@@ -25,12 +25,14 @@
     #define GIT_LOCAL_MODS_STR "No"
 #endif
 
+#define GIT_COMMIT_SHA "NO"
+
 const unsigned char WebSide[] = {
 "<!-- mbed Microcontroller Website and Authentication Shortcut -->\r\n"
 "<!-- Version: " FW_BUILD " Build: " __DATE__ " " __TIME__ " Git Commit SHA: "  GIT_COMMIT_SHA " Git local mods:" GIT_LOCAL_MODS_STR"-->\r\n"
 "<html>\r\n"
 "<head>\r\n"
-"<meta http-equiv=\"refresh\" content=\"0; url=http://mbed.org/device/?code_bl=@A\"/>\r\n"
+"<meta http-equiv=\"refresh\" content=\"0; url=http://www.analog.com/aducm360\"/>\r\n"
 "<title>mbed Website Shortcut</title>\r\n"
 "</head>\r\n"
 "<body></body>\r\n"
