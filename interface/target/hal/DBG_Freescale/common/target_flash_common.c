@@ -89,7 +89,8 @@ uint8_t target_flash_program_page(uint32_t addr, uint8_t * buf, uint32_t size)
 {
     uint32_t bytes_written = 0;
 
-#ifndef DBG_ADUCM360
+
+#if !defined(DBG_ADUCM360)
     // call a target dependent function to check if
     // we don't want to write specific bits (flash security bits, ...)
     if (!check_security_bits(addr, buf)) {
