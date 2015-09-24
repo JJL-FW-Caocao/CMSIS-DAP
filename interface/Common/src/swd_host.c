@@ -42,6 +42,12 @@
 #define DHCSR 0xE000EDF0
 #define REGWnR (1 << 16)
 
+// FPB (breakpoint)
+#define FP_CTRL 0xE0002000
+#define FP_CTRL_KEY (1 << 1)
+#define FP_COMP0 0xE0002008
+
+
 #define MAX_SWD_RETRY 10
 #define MAX_TIMEOUT   10000  // Timeout for syscalls on target
 
@@ -52,6 +58,11 @@
 #define CONF_SYSRESETREQ
 #elif defined(BOARD_LPC4337)
 #define CONF_VECTRESET
+#endif
+
+#if defined(DBG_ADUCM360)
+#define CONF_ADUCM_HALT_AFTER_BOOTKERNEL
+#define CONF_SYSRESETREQ
 #endif
 
 #if defined(CONF_SYSRESETREQ)
@@ -65,6 +76,9 @@
 #define SOFT_RESET  VECTRESET
 
 #endif
+
+
+//#undef SOFT_RESET
 
 typedef struct {
     uint32_t select;
@@ -821,6 +835,26 @@ void swd_set_target_reset(uint8_t asserted) {
     }
 }
 
+uint8_t swd_enable_hw_bp(uint8_t enable)
+{
+	if (!swd_write_word(FP_CTRL, FP_CTRL_KEY | enable)) {
+	     return 0;
+	}
+
+	return 1;
+}
+
+uint8_t swd_set_hw_bp_addr(uint32_t address)
+{
+	uint32_t bp_match = (1 << 30);
+
+        if (address & 0x2)
+             bp_match = (2 << 30);
+
+	return swd_write_word(FP_COMP0, (address == 0) ? 0 :
+		 (address & 0x1ffffffc | bp_match | 1));
+}
+
 uint8_t swd_set_target_state(TARGET_RESET_STATE state) {
     uint32_t val;
     switch (state) {
@@ -890,7 +924,7 @@ uint8_t swd_set_target_state(TARGET_RESET_STATE state) {
             os_dly_wait(2);
 
             swd_set_target_reset(0);
-#else            
+#else
             if (!swd_init_debug()) {
                 return 0;
             }
@@ -899,7 +933,7 @@ uint8_t swd_set_target_state(TARGET_RESET_STATE state) {
             if (!swd_write_word(DBG_HCSR, DBGKEY | C_DEBUGEN | C_HALT)) {
                 return 0;
             }
-            
+
             // Wait until core is halted
             do {
                 if (!swd_read_word(DBG_HCSR, &val)) {
@@ -907,11 +941,29 @@ uint8_t swd_set_target_state(TARGET_RESET_STATE state) {
                 }
             } while((val & S_HALT) == 0);
 
-            // Enable halt on reset
-            if (!swd_write_word(DBG_EMCR, VC_CORERESET)) {
+
+#if defined(CONF_ADUCM_HALT_AFTER_BOOTKERNEL)
+            // Get RESET vector address
+
+            os_dly_wait(2);
+
+            if (!swd_read_word(0x4, &val)) {
                 return 0;
             }
 
+            swd_set_hw_bp_addr(val);
+            swd_enable_hw_bp(1);
+
+            // disable halt on reset
+            if (!swd_write_word(DBG_EMCR, VC_BUSERR | VC_HARDERR)) {
+                return 0;
+            }
+#else
+            // Enable halt on reset
+            if (!swd_write_word(DBG_EMCR, VC_CORERESET)) {
+               return 0;
+            }
+#endif
 	        // Perform a soft reset
             if (!swd_write_word(NVIC_AIRCR, VECTKEY | SOFT_RESET)) {
                 return 0;
@@ -924,6 +976,11 @@ uint8_t swd_set_target_state(TARGET_RESET_STATE state) {
                     return 0;
                 }
             } while((val & S_HALT) == 0);
+
+#if defined(CONF_ADUCM_HALT_AFTER_BOOTKERNEL)
+            swd_enable_hw_bp(0);
+            swd_set_hw_bp_addr(0);
+#endif
 
             // Disable halt on reset
             if (!swd_write_word(DBG_EMCR, 0)) {

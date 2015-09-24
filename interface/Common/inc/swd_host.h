@@ -31,5 +31,7 @@ uint8_t swd_semihost_restart(uint32_t r0);
 uint8_t swd_flash_syscall_exec(const FLASH_SYSCALL *sysCallParam, uint32_t entry, uint32_t arg1, uint32_t arg2, uint32_t arg3, uint32_t arg4);
 
 uint8_t swd_set_target_state(TARGET_RESET_STATE state);
+uint8_t swd_enable_hw_bp(uint8_t enable);
+uint8_t swd_set_hw_bp_addr(uint32_t address);
 
 #endif
